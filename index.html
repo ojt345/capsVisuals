@@ -27,6 +27,17 @@
         h1 {
             color: #2c3e50;
         }
+        h2 {
+            color: #3498db;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        .section-divider {
+            height: 2px;
+            background-color: #3498db;
+            margin: 3rem 0;
+        }
         .results-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -65,6 +76,40 @@
         }
         .btn:hover {
             background-color: #2980b9;
+        }
+        .summary-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .key-finding {
+            background-color: #f1f8ff;
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .data-highlight {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f1f8ff;
         }
         footer {
             margin-top: 3rem;
@@ -118,8 +163,128 @@
             </div>
         </div>
 
+        <div class="section-divider"></div>
+
+        <header>
+            <h1>Cybersecurity Education Research Summary</h1>
+            <p>Effectiveness of CTF Gamification Platform vs. Traditional Learning Methods</p>
+        </header>
+
+        <div class="summary-section">
+            <h2>Research Overview</h2>
+            <p>This study evaluated the effectiveness of a Capture The Flag (CTF) gamification platform for teaching cybersecurity competencies compared to traditional lecture-based methods. The research employed an experimental design with control and experimental groups, using various statistical analyses to evaluate learning outcomes.</p>
+            
+            <div class="key-finding">
+                <p>The experimental group (using CTF platform) demonstrated greater overall improvement in cybersecurity competencies compared to the control group (traditional lectures), particularly in practical skill development.</p>
+            </div>
+        </div>
+
+        <div class="summary-section">
+            <h2>Participant Background</h2>
+            <ul>
+                <li>Equal distribution of prior CTF experience (50% had previous experience)</li>
+                <li>Majority of experienced participants (60.6%) identified as beginners</li>
+                <li>Web Exploitation (65.6%) and Cryptography (59.4%) were the most familiar areas</li>
+                <li>High interest in learning cybersecurity skills (mean rating: <span class="data-highlight">3.88/5</span>)</li>
+            </ul>
+        </div>
+
+        <div class="summary-section">
+            <h2>Key Statistical Findings</h2>
+            
+            <h3>N-Gain Analysis (Learning Effectiveness)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Measurement</th>
+                        <th>Control Group</th>
+                        <th>Experimental Group</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Overall Score</td>
+                        <td>0.55 (Medium)</td>
+                        <td><span class="data-highlight">0.69 (Medium)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Knowledge</td>
+                        <td>0.49 (Medium)</td>
+                        <td>0.60 (Medium)</td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>0.58 (Medium)</td>
+                        <td><span class="data-highlight">0.75 (High)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Reverse Engineering</td>
+                        <td>0.24 (Low)</td>
+                        <td>0.18 (Low)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Wilcoxon Signed-Rank Test</h3>
+            <p>Both control and experimental groups showed significant improvements in cybersecurity knowledge and skills between pre-test and post-test:</p>
+            <ul>
+                <li>Control group overall improvement: p = 0.002</li>
+                <li>Experimental group overall improvement: p < 0.001</li>
+            </ul>
+            
+            <h3>Mann-Whitney U Test</h3>
+            <p>Despite improvements in both groups, the differences between experimental and control groups were not statistically significant (p > 0.05).</p>
+        </div>
+
+        <div class="summary-section">
+            <h2>Domain-Specific Improvements</h2>
+            
+            <div class="key-finding">
+                <p>The experimental group showed "High Effectiveness" (N-Gain ≥0.7) in most skill domains:</p>
+                <ul>
+                    <li>General Skills: 0.83</li>
+                    <li>Web Skills: 0.75</li>
+                    <li>OSINT Skills: 0.70</li>
+                    <li>Forensics Skills: 0.76</li>
+                    <li>Reverse Engineering Skills: 0.75</li>
+                </ul>
+            </div>
+            
+            <p>Both groups struggled with Reverse Engineering knowledge acquisition (Experimental: 0.18, Control: 0.24), suggesting this complex domain requires specialized teaching approaches.</p>
+        </div>
+
+        <div class="summary-section">
+            <h2>Participant Feedback</h2>
+            
+            <h3>Experimental Group (CTF Platform)</h3>
+            <ul>
+                <li><span class="data-highlight">94.1%</span> reported increased interest in cybersecurity</li>
+                <li>94.1% rated the gamified approach as highly or extremely engaging</li>
+                <li><span class="data-highlight">88.2%</span> recommended integrating CTF into traditional lectures</li>
+                <li>Web Exploitation and Forensics were rated as most enjoyable (29.4% each)</li>
+                <li>Reverse Engineering was identified as most challenging (88.2%)</li>
+            </ul>
+            
+            <h3>Control Group (Traditional Learning)</h3>
+            <ul>
+                <li>83.3% rated the traditional method as effective or very effective</li>
+                <li><span class="data-highlight">94.4%</span> recommended incorporating gamified methods</li>
+                <li>OSINT showed highest perceived improvement (72.2%)</li>
+                <li>Reverse Engineering showed lowest perceived improvement (38.9%)</li>
+            </ul>
+        </div>
+
+        <div class="summary-section">
+            <h2>Conclusions</h2>
+            <p>The research demonstrates that while traditional lecture-based approaches produce meaningful learning outcomes, integrating hands-on gamified activities through CTF platforms yields superior results, particularly for practical skill development.</p>
+            
+            <p>Both teaching methods struggled with complex topics like Reverse Engineering, suggesting a need for specialized instructional strategies in this area.</p>
+            
+            <p>The overwhelmingly positive feedback from both groups regarding gamification suggests strong potential for integrating CTF-style activities into cybersecurity education curriculum.</p>
+        </div>
+
         <footer>
-            <p>Created on May 7, 2025</p>
+            <p>Generated on May 7, 2025</p>
         </footer>
     </div>
 </body>
