@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistical Study Results</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        .result-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .result-card h2 {
+            margin-top: 0;
+            color: #3498db;
+            font-size: 1.4rem;
+        }
+        .result-card p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        @media (min-width: 768px) {
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Statistical Study Results</h1>
+            <p>Research findings and statistical analyses from our study</p>
+        </header>
+
+        <div class="results-grid">
+            <div class="result-card">
+                <h2>Shapiro-Wilk Analysis</h2>
+                <p>Research findings on normality testing using the Shapiro-Wilk method.</p>
+                <a href="https://claude.ai/public/artifacts/88d96f65-36d6-4d6c-8acb-b9749238d02b" class="btn" target="_blank">View Results</a>
+            </div>
+
+            <div class="result-card">
+                <h2>Wilcoxon Analysis</h2>
+                <p>Study results using the Wilcoxon signed-rank test for paired samples.</p>
+                <a href="https://claude.ai/public/artifacts/eaf23748-3e0e-4903-ab56-1084ca2f4ce4" class="btn" target="_blank">View Results</a>
+            </div>
+
+            <div class="result-card">
+                <h2>N-Gain Analysis</h2>
+                <p>Research findings on normalized gain scores for measuring learning improvement.</p>
+                <a href="https://claude.ai/public/artifacts/d3015816-62ab-4649-8aad-22878342ea97" class="btn" target="_blank">View Results</a>
+            </div>
+
+            <div class="result-card">
+                <h2>Validity Analysis</h2>
+                <p>Study findings on the validity of measurement instruments and assessments.</p>
+                <a href="https://claude.ai/public/artifacts/063a5b2b-6926-4551-bcfe-d2ca02fa8fe2" class="btn" target="_blank">View Results</a>
+            </div>
+
+            <div class="result-card">
+                <h2>Mann-Whitney Analysis</h2>
+                <p>Research results using the Mann-Whitney U test for independent samples.</p>
+                <a href="https://claude.ai/public/artifacts/615a66af-acbf-4261-86b5-aa70db1a3425" class="btn" target="_blank">View Results</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created on May 7, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
